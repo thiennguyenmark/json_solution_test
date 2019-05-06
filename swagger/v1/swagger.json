@@ -1,9 +1,78 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "API V1",
-    "version": "v1",
-    "description": "This is the first version of my API"
+    "description": "This is json Tester",
+    "version": "1.0.0",
+    "title": "JSON DOCUMTATION TEST",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "apiteam@swagger.io"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
   },
-  "basePath": "/api/v1"
+  "host": "petstore.swagger.io",
+  "basePath": "/v1/api-docs",
+  "tags": [
+    {
+      "name": "Vehicel Review List Items",
+      "description": "Vehicel Review List Items"
+    }
+  ],
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/vehicle_owner_reviews": {
+      "get": {
+        "tags": [
+          "Vehicel Review List Items"
+        ],
+        "summary": "Vehicel Review List Items",
+        "description": "Return Vehicel Review List Items",
+        "operationId": "Vehicel Review List Items",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "vehicle_owner_review_lists": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "content_review": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
 }
