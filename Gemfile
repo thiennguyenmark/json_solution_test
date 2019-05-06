@@ -8,6 +8,14 @@ gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'active_model_serializers'
+gem 'rswag-api'
+gem 'rswag-ui'
+gem 'rswag-specs'
+
+group :test do
+  gem 'rspec-rails'
+  gem 'rswag-specs'
+end
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
