@@ -1,7 +1,7 @@
 require 'swagger_helper'
 
 describe 'Vehicle Owner Review Show Items' do
-  path '/vehicle_owner_review' do
+  path '/vehicle_owner_reviews' do
     get 'Vehicle Owner Review List' do
       tags 'VehicleOwnerReview'
       produces 'application/json', 'application/xml'

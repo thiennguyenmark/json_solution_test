@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/vehicle_owner_review": {
+    "/vehicle_owner_reviews": {
       "get": {
         "summary": "Vehicle Owner Review List",
         "tags": [
