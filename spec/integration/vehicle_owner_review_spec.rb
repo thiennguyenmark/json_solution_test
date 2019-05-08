@@ -6,7 +6,7 @@ describe 'Vehicle Owner Review Show Items' do
       tags 'VehicleOwnerReview'
       produces 'application/json', 'application/xml'
 
-      response '200', 'name found' do
+      response '200', 'response successfully' do
         schema type: :object,
           properties: {
             title: { type: :string },
