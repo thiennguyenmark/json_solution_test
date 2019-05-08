@@ -4,7 +4,7 @@ RSpec.describe VehicleOwnerReviewsController, type: :controller do
   describe "#show" do
     it "has a 200 status code" do
       get :show
-      expect(response.status).to eq(200)
+      expect(response).to have_http_status(:ok)
     end
 
     it "responds to json by default" do
