@@ -9,6 +9,7 @@ describe 'Vehicle Owner Review Show Items' do
       response '200', 'response successfully' do
         schema type: :object,
           properties: {
+            id: { type: :integer },
             title: { type: :string },
             content: { type: :string },
             vehicle_owner_review_lists: {
@@ -16,7 +17,7 @@ describe 'Vehicle Owner Review Show Items' do
               items: {
                  type: :object,
                  properties: {
-                   id: { type: :string },
+                   id: { type: :integer },
                    content_review: { type: :string }
                  }
               }
