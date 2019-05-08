@@ -12,8 +12,16 @@ describe 'Vehicle Owner Review Show Items' do
             title: { type: :string },
             content: { type: :string },
             vehicle_owner_review_lists: {
-              type: :object
+              type: :array,
+              items: {
+                 type: :object,
+                 properties: {
+                   id: { type: :string },
+                   content_review: { type: :string }
+                 }
+              }
             }
+
           }
         run_test!
       end

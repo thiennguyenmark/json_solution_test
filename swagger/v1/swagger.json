@@ -28,7 +28,18 @@
                   "type": "string"
                 },
                 "vehicle_owner_review_lists": {
-                  "type": "object"
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "content_review": {
+                        "type": "string"
+                      }
+                    }
+                  }
                 }
               }
             }
