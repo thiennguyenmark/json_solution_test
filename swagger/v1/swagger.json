@@ -21,13 +21,12 @@
               "type": "object",
               "properties": {
                 "id": {
-                  "type": "integer"
+                  "type": "integer",
+                  "example": 1
                 },
                 "title": {
-                  "type": "string"
-                },
-                "content": {
-                  "type": "string"
+                  "type": "string",
+                  "example": "Đánh giả chủ xe"
                 },
                 "vehicle_owner_review_lists": {
                   "type": "array",
@@ -35,10 +34,12 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "integer"
+                        "type": "integer",
+                        "example": 1
                       },
                       "content_review": {
-                        "type": "string"
+                        "type": "string",
+                        "example": "Thái độ chủ hàng"
                       }
                     }
                   }

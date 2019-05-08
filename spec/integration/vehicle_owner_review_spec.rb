@@ -9,17 +9,28 @@ describe 'Vehicle Owner Review Show Items' do
       response '200', 'response successfully' do
         schema type: :object,
           properties: {
-            id: { type: :integer },
-            title: { type: :string },
-            content: { type: :string },
+            id: {
+              type: :integer,
+              example: 1
+            },
+            title: {
+              type: :string,
+              example: 'Đánh giả chủ xe'
+            },
             vehicle_owner_review_lists: {
               type: :array,
               items: {
-                 type: :object,
-                 properties: {
-                   id: { type: :integer },
-                   content_review: { type: :string }
-                 }
+                type: :object,
+                properties: {
+                  id: {
+                    type: :integer,
+                    example: 1
+                  },
+                  content_review: {
+                    type: :string,
+                    example: 'Thái độ chủ hàng'
+                  }
+                }
               }
             }
           }
