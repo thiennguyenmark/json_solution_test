@@ -21,7 +21,6 @@ describe 'Vehicle Owner Review Show Items' do
                  }
               }
             }
-
           }
         run_test!
       end
