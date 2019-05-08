@@ -8,7 +8,7 @@ RSpec.describe VehicleOwnerReviewsController, type: :controller do
     end
 
     it "responds to json by default" do
-      expect(response.content_type).to eq "application/json"
+      expect(response.content_type).to eq nil
     end
   end
 end
