@@ -17,7 +17,7 @@
         ],
         "responses": {
           "200": {
-            "description": "name found",
+            "description": "response successfully",
             "schema": {
               "type": "object",
               "properties": {
