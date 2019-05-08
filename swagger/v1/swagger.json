@@ -2,8 +2,39 @@
   "swagger": "2.0",
   "info": {
     "title": "API V1",
-    "version": "v1",
-    "description": "This is the first version of my API"
+    "version": "v1"
   },
-  "basePath": "/api/v1"
+  "paths": {
+    "/vehicle_owner_review": {
+      "get": {
+        "summary": "Vehicle Owner Review List",
+        "tags": [
+          "VehicleOwnerReview"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "responses": {
+          "200": {
+            "description": "name found",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "vehicle_owner_review_lists": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

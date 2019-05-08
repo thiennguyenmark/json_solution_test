@@ -17,10 +17,9 @@ RSpec.configure do |config|
       swagger: '2.0',
       info: {
         title: 'API V1',
-        version: 'v1',
-        description: 'This is the first version of my API'
+        version: 'v1'
       },
-      basePath: '/api/v1'
+      paths: {}
     }
   }
 end
