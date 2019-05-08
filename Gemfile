@@ -11,6 +11,7 @@ gem 'active_model_serializers'
 gem 'rswag-api'
 gem 'rswag-ui'
 gem 'rswag-specs'
+gem 'rubocop'
 
 group :test do
   gem 'rspec-rails'

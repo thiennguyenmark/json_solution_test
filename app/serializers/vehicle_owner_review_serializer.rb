@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class VehicleOwnerReviewSerializer < ActiveModel::Serializer
   attributes :id, :title
 
